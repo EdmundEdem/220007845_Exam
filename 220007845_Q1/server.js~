@@ -1,0 +1,18 @@
+// basic stuff
+const express = require('express');
+const app = express();
+
+// mongoose
+const mongoose = require('mongoose');
+const PatientSchema = new mongoose.Schema({
+
+});
+
+const PaymentSchema = new mongoose.Schema({
+
+});
+
+mongoose.Promise = global.Promise;
+mongoose.connect('mongodb://localhost/goodhealthDb');
+Patient = mongoose.model('Patient', PatientSchema);
+Payment = mongoose.model('Payment', PaymentSchema);

@@ -1,0 +1,5 @@
+var express = require('express'),
+    app = express(),
+    port = 3000;
+app.listen(port)
+console.log("Started Web API on port: ' + port)
